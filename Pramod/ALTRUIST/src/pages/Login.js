@@ -2,26 +2,18 @@ import styled from "styled-components";
 import { Button } from '@material-ui/core';
 import React from 'react';
 import { auth, provider } from '../firebase';
-// import './Login.css';
+
+
 function Login() {
     const signIn = () => {
         auth.signInWithPopup(provider).catch((error) => alert(error.message));
     }
-    
-    // {user ? (
-    //     <>
-    //       <Sidebar />
-    //       <Chat />
-    //     </>
-    //   ) : (
-    //     <Login />
-    //   )}
+   
 
     return (
         <div className='login'>   
 
         
-            {/* <div class="login-logo"> */}
               <Container>
                         <Nav>
                             <a href="./">
@@ -43,11 +35,11 @@ function Login() {
                                 Sign in with Google
                             </Google>
                             </Form>
-                            {/* <Button onClick={signIn}>Sign In</Button> */}
+                            
                     </Section>
                     </Container>  
             </div>
-        // </div>
+       
     );
 };
 
@@ -198,14 +190,6 @@ const Google = styled.button`
 
 
 
-            // <div className="login__logo">
-            //     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsy-bhKsXq8DNFshaErEoJkWiI6jX5uHefKzSyq4SPQJtzZGXsUy6lMo2Y1bdu1ptXbv0&usqp=CAU" 
-            //     alt=""/>
-            // </div>   
-
-        //     <Button onClick={signIn}>Sign In</Button>
-        // </div>
-//     )
-// }
+      
 
 export default Login
