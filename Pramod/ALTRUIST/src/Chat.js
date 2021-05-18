@@ -46,14 +46,6 @@ function Chat() {
     return (
         <div className="chat">
 
-{/* {user ? (
-        <>
-          <Sidebar />
-          <Chat />
-        </>
-      ) : (
-        <Login />
-      )} */}
 
             <ChatHeader channelName={channelName} />
 
