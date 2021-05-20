@@ -1,0 +1,87 @@
+.cd-header {
+    height: 400px;
+    background-image: url(https://blog.execu-search.com/wp-content/uploads/2017/10/ManageMillennials.jpg);
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-position: center;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+body {
+    background-color: rgba(248, 231, 231, 0.5)
+}
+ 
+.column {
+    float: left;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding: 0 8px;
+    
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 768px) {
+    .cd-header {
+        height: 400px;
+        width:500px;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        background-position: center;
+    }
+    .column {
+      width: 80%;
+      display: block;
+    }
+    .card {
+        width: 80%;
+        height: auto;
+        box-shadow: 0 4px 6px 0 rgb(253, 241, 241);
+        background-color: white;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgb(253, 241, 241);
+    background-color: white;
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    margin: 0 5px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  
