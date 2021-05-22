@@ -16,28 +16,7 @@ function Home() {
             </header>
     {/* <!--main area--> */}
         <main id="main">
-            {/* <!--section1--> */}
-            <section id="section1" class="grid">
-                <div class="content">
-                <h2 class="content-title">WHAT WE DO</h2>
-                <div class="content-text">
-                    <div class="vision">
-                        <h4>Vision:</h4>
-                        <p>To connect society and build a platform in which people live with benevolence.</p>
-                    </div>
-                    <div class="aim">        
-                        <h4>Aim:</h4>
-                        
-                        <ul>
-                            <li>Our Mission is to provide Complete Product Reusability which is more affordable and to form a society which is interactive and productive.</li>
-                            <li>To help organizing events.</li>
-                        <li>
-                        Provide a helping hand by connecting to NGOs.</li>
-                        </ul>
-                        </div>
-                </div>
-                </div>
-            </section>
+
             {/* <!--section2--> */}
             <section id="section2" class="grid">
                 <ul>
@@ -73,24 +52,43 @@ function Home() {
                     </li>
                 </ul>
             </section>
+            {/* <!--section1--> */}
+            <section id="section1" class="grid">
+                    <img class="bg-image1" alt="about-image" src="./images/book.jpg" />
+                <div class="content">
+                    <h2 class="content-title">WHAT WE DO</h2>
+                    <div class="content-text">
+                        <div class="vision rotate_right">
+                            <img src="./images/vision.jpg" alt="vision" />
+                            <p>To connect society and build a platform in which people live with benevolence.</p>
+                        </div>
+                        <div class="aim rotate_left">        
+                            <img src="./images/mission.jpg" alt="Mission" />   
+                            <p>Our Mission is to provide Complete Product Reusability which is more affordable and to form a society which is interactive and productive.<br/>
+                            To help organizing events.<br/>
+                            Provide a helping hand by connecting to NGOs.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             {/* <!--section3--> */}
-            <section id="section3" class="grid">
+            {/* <section id="section3" class="grid">
                 <div class="content">
                     <h3 class="content-title">IMPACT</h3>
                 </div>
                 <div class="content-text">
                     <p>This is to build a Society which has a good intension to help Society and upbringing the Nation.</p>
                 </div>
-            </section>
+            </section> */}
 			<section id="section5">
 				<div>
 					<h2>Get Involved</h2>
-					<p>Events<br/>
-                        NGO Activities<br/> 
-                        Volunteering<br/>
-                        Organizing<br/>
-                        Chat and Enjoy
-                    </p>
+					<p>Events</p>
+                        <p>NGO Activities</p> 
+                        <p>Volunteering</p>
+                        <p>Organizing</p>
+                       <p>Chat and Enjoy</p>
+                    
 				</div>
 			</section>
             {/* <!--section4--> */}
@@ -99,10 +97,10 @@ function Home() {
         </main>
         {/* <!--footer--> */}
             <footer id="footer" class="grid">
-                <div><sup>&copy;</sup> copyrights</div>
+                <div><sup>&copy;</sup> copyrights 2021</div>
                 <div>
                     Project by
-                    <a href="https://www.w3schools.com">Brute Force</a>
+                    <a href="#">Brute Force</a>
                 </div>
             </footer>
         </div>
