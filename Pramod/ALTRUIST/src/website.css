@@ -1,8 +1,10 @@
 body{
     margin: 0;
     max-width: 100%;
-    background: #333;
-    color: #fff;
+    /* background: #333;
+    color: #fff; */
+    background: #f7f3e8;
+    color: #454040;
     font-size: 1.1em;
     font-family: "Raleway", sans-serif;
     line-height: 1.5;
@@ -17,7 +19,7 @@ img{
 h1,h2,h3,h4{
     margin: 0;
     padding: 1em 0;
-    font-family: Special Elite;
+    font-family: Raleway;
 }
 p{
     margin: 0;
@@ -27,6 +29,8 @@ p{
 #showcase{
     min-height: 450px;
     text-align: center;
+    /* background: #f7f3e8;
+    color: #454040; */
 }
 .bg-image{
 
@@ -35,12 +39,12 @@ p{
     background-size: cover;
     width: 100%;
     height: 450px;
-    opacity: 0.15;
+    opacity: 0.2;
     z-index: -1;
 }
 #showcase h1{
     color: rgb(205, 240, 48);
-    font-family: Special Elite;
+    /* font-family: Special Elite; */
     font-weight: 700;
     font-size: 60px;
     padding-top: 200px;
@@ -73,12 +77,53 @@ p{
     color: #333;
 }
 #section1{
-    background: #eaeaea;
-    color: #333;
-    padding-bottom: 2em;
+    display: grid;
+    min-height: 500px;
+    grid-template-columns: 1fr repeat(2,minmax(auto, 15em)) 1fr;
+    /* background: #eaeaea;
+    color: #333; */
+    background: #f7f3e8;
+    color: #454040;
+    padding: 0px 0px;
     height: fit-content;
-    
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
+
+h2.content-title{
+    position: relative;
+    color: #333;
+    opacity: 1;
+    font-size: 2em;
+}
+.bg-image1{
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    /* border-top: 1px solid black; */
+    width: 100%;
+    height: 608px;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.vision{
+    width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.vision>img{
+    height:250px;
+    padding-bottom: 10px;
+}
+.rotate_right {
+    float: left;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+  }
 .vision h3{
     font-size: 30px;
     font-weight: 300;
@@ -86,9 +131,25 @@ p{
 }
 .vision p{
     text-align: left;
+    font-weight: 800;
 }
-.aim li{
+
+.aim{
+    width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa; 
+}
+.rotate_left {
+    float: left;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(-8deg);
+  }
+.aim p{
     text-align: left;
+    font-weight: 800;
 }
 /* #section1 .content-text{
      columns: 2;
@@ -97,6 +158,8 @@ p{
 }*/
 #section2 {
     padding: 2em 1em 1em;
+    background: #f7f3e8;
+    color: #454040;
 }
 #section2 ul{
     display: inline-flex;
@@ -109,10 +172,11 @@ p{
     width: 33.33%;
     height: 455px; 
     padding: 5px;
-    margin-bottom: 1em;
+    margin-bottom: 1em; 
     background: #fff;
     color: #333;
-    border: 1px solid black;
+    
+    border: 1px dashed #333;
 }
 li.card-content{
     
@@ -124,13 +188,13 @@ li.card-content{
     text-align: left;
 }
 
- #section3 {
+ /* #section3 {
     background: #fff;
     color: #333;     
     padding: 2em;
     font-size: 20px;
     font-weight: 400;
- }
+ } */
 
 #section4 .box{
     padding: 2em;
@@ -143,8 +207,19 @@ li.card-content{
     line-height: 1.5;
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 10px;
-    padding-bottom: 25px;
+    height: 400px;
+    margin-bottom: 1px;
+    background: #f7f3e8;
+    color: #454040;
+    padding-bottom: 5px;
+}
+
+#section5 p{
+    padding-top: 20px;
+}
+#section5 p:hover{
+    font-size: 50px;
+    font-weight: bolder;
 }
 #footer{
     padding: 2em;
@@ -162,6 +237,9 @@ li.card-content{
     padding-top: 90px;
     background: #eaeaea;
     color: #333;
+}
+.login{
+    padding-top:55px;
 }
 
 
@@ -292,6 +370,116 @@ li.card-content{
 
 
 
+/* getintouch */
+.cd-header {
+    height: 180px;
+    background-color: hsl(73, 60%, 92%);
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header h1 {
+    color: rgb(14, 14, 17);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+	*{
+			box-sizing: border-box;
+			transition: 0.25s;
+		}
+		body{
+      font: 18px/1.5 'Abel',system-ui, sans-serif;
+			/* padding: 0 2rem; */
+			background: #000E;
+			color: dimgray;
+    }
+    h1{
+      text-align: center;
+      font-size: 3rem;
+      padding-bottom: 0.25em;
+      border-bottom: 1px solid silver;
+      border-image: linear-gradient(to right, transparent 20%, darkslategrey, transparent 80%)30;
+    }
+/*** Specific styles ***/
+    details{
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 0.25rem;
+			border: 1px solid silver;
+    }
+    summary{
+		  list-style-type: '✔  ';
+      font-size: 1.25rem;
+      font-weight: bold;
+      cursor: pointer; 
+      position: relative;
+			outline: none;
+			color: silver;
+    }
+    summary::after{
+      content: "\1401";
+      padding: 0.5rem;
+      position: absolute;
+      right: 0.25rem;
+      top: -0.5rem;
+      color: whitesmoke;
+    }
+    details[open]{
+			background: whitesmoke;
+    }
+	details[open] summary{
+		color: dimgrey;
+	}
+    details[open] summary::after{
+      content: "\25B2";
+      color: rgb(7, 7, 7);
+    }
+/*** End specific styles ***/
+    p{
+      color: dimgrey;
+      letter-spacing: 1.5;
+    }
+
+
+/* Donate layer */
+.donate{
+	position: fixed;
+	bottom: 0.25rem;
+	right: 0.25rem; 
+	border-radius: 0.5rem;
+	background-color: whitesmoke;
+	padding: 0 1rem;
+	font-weight: bold;
+	color: dimgray;
+}
+.donate a{
+	text-decoration: none;
+	color: orangered;
+	border-bottom: 2px solid transparent;
+	transition: 0.35s;
+}
+.donate a:hover{
+	border-bottom-color: orangered;
+}
+
+/* getintouch */
+
+
 
 
 
@@ -302,21 +490,21 @@ li.card-content{
     }
     #section1 .content-text{
         columns: 2;
-       column-gap: 2em; 
+       column-gap: 0; 
        padding-top: 0;
     }
     #section1 .vision{
-        height: 200px;
+        height: 400px;
     }
     #section1 .aim{
-        height: 200px;
+        height: 440px;
     }
     .content, #section2 ul{
         grid-column: 2/4;
     }
-    #section3 .content-text{
+    /* #section3 .content-text{
         grid-column: 2/4;
-    }
+    } */
     .box, #footer div{
         grid-column: span 2;
     }
