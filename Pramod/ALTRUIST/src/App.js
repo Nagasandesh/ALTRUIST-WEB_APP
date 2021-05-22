@@ -21,13 +21,17 @@ function App() {
     <div className="app">
 
 <Router>
-      <Navbar />
+      
       <Switch>
-        <Route path='/' exact component={Home}/>
-        <Route path='/Login' exact component={Login}/>
+        
         <Route path='/Chatlogin' exact component={Chatlogin}/>
-        <Route path='/Ngo' exact component={Ngo}/>
-        <Route path='/GetInTouch' exact component={GetInTouch}/>
+        <div>
+          <Navbar />
+          <Route path='/' exact component={Home}/>
+          <Route path='/Ngo' exact component={Ngo}/>
+          <Route path='/GetInTouch' exact component={GetInTouch}/>
+        </div>
+        
       </Switch>
     </Router>
 
